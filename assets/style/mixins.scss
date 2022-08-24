@@ -1,0 +1,40 @@
+// media query
+$screen-xsm-min: 414px;
+$screen-sm-min: 767px;
+$screen-md-min: 1024px;
+$screen-lg-min: 1199px;
+$screen-xlg-min: 1920px;
+@mixin for-size($size) {
+  @if $size == xs-only {
+    @media (max-width: $screen-xsm-min) {
+      @content;
+    }
+  }
+  @else if $size == sm-only {
+    @media (max-width: $screen-sm-min) {
+      @content;
+    }
+  }
+  @else if $size == tablet {
+    @media (min-width:  $screen-sm-min) and (max-width: $screen-md-min) {
+      @content;
+    }
+  }
+  @else if $size == md-only {
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
+      @content;
+    }
+  }
+  @else if $size == xlg-only {
+    @media (min-width: $screen-xlg-min) {
+      @content;
+    }
+  }
+}
+
+@mixin text-style ($color,$font-family,$font-weight,$font-size) {
+    color: $color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+} 

@@ -1,0 +1,21 @@
+version: '3'
+services:
+  website-factory-dev:
+    image: seraphinbe/website-factory
+    build:
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - .:/app/
+      - ~/.aws/credentials:/root/.aws/credentials
+    network_mode: host
+    command: bash
+    tty: true
+    stdin_open: true
+    privileged: true
+  website-factory-production:
+    image: seraphinbe/website-factory
+    volumes:
+        - ~/.aws/credentials:/root/.aws/credentials
+    command: yarn everything the-whole-world
+

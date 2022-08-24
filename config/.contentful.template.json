@@ -1,0 +1,15 @@
+{
+  "CTF_BLOG_POST_TYPE_ID": "article",
+  "CTF_SPACE_ID": "",
+  "CTF_CDA_ACCESS_TOKEN": "",
+  //For staging (remove comments after cleanup, not allowed in json files)
+  "CTF_HOST":"preview.contentful.com", 
+  "CONFIG_REPO":"staging-[YOUR NAME]", 
+  "URL":"https://www.assurances-hospitalisations.be",
+  "GOOGLE_TAG_MANAGER_ID":"GTM-XXXXXXX"
+  //For production
+  "CTF_HOST":"cdn.contentful.com",
+  "CONFIG_REPO":"production-[YOUR NAME]",
+  "URL":"https://www.assurances-hospitalisations.be",
+  "GOOGLE_TAG_MANAGER_ID":"GTM-XXXXXXX"
+}

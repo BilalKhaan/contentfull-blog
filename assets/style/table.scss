@@ -1,0 +1,38 @@
+table {
+    border-collapse: separate;
+    border: 1px solid #eee;
+    text-align: center;
+    table-layout: fixed;
+    margin: 2rem 0;
+    width: 100%;
+    font-size: .9375rem;
+  }
+  table thead {
+    color: #00bbe0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  table thead th {
+    border-top: 1px solid #00bbe0;
+    border-bottom: 1px solid #00bbe0;
+  }
+  table td, th {
+    border-spacing: 0px; 
+    padding: 20px 10px;
+    vertical-align: middle;
+    width: auto!important;
+  }
+  table thead th:first-child {
+    border-radius: 3px 0 0 3px;
+    border-left: 1px solid #00bbe0;
+  }
+  table thead th:last-child {
+    border-radius: 0 3px 3px 0;
+    border-right: 1px solid #00bbe0;
+  }
+  table tr td {
+    border-right: 1px solid #eee;
+  }
+  table tr+tr td {
+    border-top: 1px solid #eee;
+  }

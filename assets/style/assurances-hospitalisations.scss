@@ -1,0 +1,61 @@
+//colors
+$color-primary: #02de83;
+$color-secondary: #ef767a;
+$color-info: #5dfdcb;
+$color-danger: #52d1dc;
+$color-success: #5652fa;
+$color-white: #fff;
+
+//Fonts: unfortunately, due to a bug in webpack, font files may not be loaded here but should be loaded in a layout (ex: default.vue)
+$font: 'Avenir Book';
+$color-text-primary:  #909fab;
+
+//Header
+$font-header-color: $color-white;
+
+//title
+$font-title: 'Avenir Book';
+$font-title-weight: 800;
+$font-title-size: 38px;
+
+//summaryChecks
+$font-checks:  'Avenir Book';
+$font-checks-weight: 400;
+$font-checks-size: 20px;
+$checks-bg-color: $color-success;
+
+//blog-content
+$font-blog-content: $font;
+$font-blog-content-weight: 500;
+$font-blog-content-size: 20px;
+
+//blog label
+$font-blog-label-weight: 500;
+$font-blog-label-size: 14px;
+
+//other titles
+$font-minor-title: "Dosis", sans-serif;
+$font-breadcrumb: "Noto Sans", sans-serif;
+
+// footer color
+$footer-bg-color: #3B3E4A;
+$footer-text-color: white;
+$footer-copy-right-color: rgba(255,255,255,.5);
+
+.c-blog-content {
+  li {
+  	p {
+  		margin: 0;
+  		display: inline;
+  	}
+  	&:before {
+	    content: '__';
+	    color: $color-primary;
+	    font-size: 20px;
+	    font-weight: bold;
+	    padding-right: 20px;
+      position: relative;
+      bottom: 6px;
+    }
+  }
+}

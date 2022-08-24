@@ -1,0 +1,57 @@
+.c-box {
+    position: relative;
+    width: 90%;
+    border: 2px solid #3680da;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 600;
+    margin: 18px auto;
+    &:before {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 100px;
+      width: 100px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-position: center;
+      @include for-size (sm-only) {
+        width: 90%;
+        top: 17%;
+      }
+    }
+  }
+  .c-box--idea:before {
+    content: '';
+    background-image: url("~assets/images/lumb.svg");
+  }
+  .c-box--alert:before {
+    content: '';
+    background-image: url("~assets/images/whistle.png");
+  }
+  .c-box--benefits:before {
+    content: '';
+    background-image: url("~assets/images/shield.png");
+  }
+  .c-box--idea {
+    border-color: #fbc929;
+    padding-left: 100px;
+    @include for-size (sm-only) { 
+      padding-left: 15px;
+      padding-top: 90px;
+    }
+  }
+  .c-box--alert {
+    border-color: #ff2d5c;
+    padding-left: 100px;
+    @include for-size (sm-only) {
+      padding-left: 15px;
+      padding-top: 115px;
+    }
+  }
+  .c-box--benefits {
+    border-color: #00AF80;
+    padding-left: 100px;
+  }
